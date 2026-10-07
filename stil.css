@@ -94,3 +94,14 @@ main h2.ortala{margin-top:44px}
 @media (max-width:860px){.nasil{grid-template-columns:1fr}.nasil .ekranlar{justify-content:center}.nasil .telefon.kucuk{width:160px}.nasil .ekranlar .ikinci{margin-top:30px}.sayilar{grid-template-columns:repeat(2,1fr)}}
 .atif{font-size:11.5px;opacity:.7;margin-top:10px}
 .bulut{inset:auto;top:-60px;bottom:0;left:50%;width:100vw;margin-left:-50vw}
+/* v5: her sayfada sabit Tarantula arka plani */
+body{background:#0b1220}
+.evren{position:fixed;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(11,18,32,.62) 0%,rgba(11,18,32,.80) 55%,rgba(11,18,32,.88) 100%),url(tarantula.jpg) center/cover no-repeat}
+header{background:rgba(11,18,32,.78)}
+.kart,.adim,details,.sayilar div{background:rgba(19,32,54,.86);backdrop-filter:blur(3px)}
+.kaynaklar a{background:rgba(14,24,40,.85);border:1px solid var(--cizgi);border-radius:10px;padding:8px 14px;font-size:14px;color:var(--metin);text-decoration:none;transition:border-color .2s,color .2s}
+.kaynaklar a:hover,.kaynaklar a:focus{border-color:var(--altin);color:var(--altin2)}
+footer{background:rgba(11,18,32,.72)}
+.marka .yazi2{width:270px}
+.logo img{height:34px}
+h1{font-family:Georgia,serif;font-weight:400;font-size:34px}
