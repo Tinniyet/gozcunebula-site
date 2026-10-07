@@ -65,3 +65,14 @@ footer p{margin:6px 0}
 .ekranlar figure{margin:0;text-align:center}
 .telefon.kucuk{width:220px}
 figcaption{margin-top:10px;color:var(--metin2);font-size:14px}
+/* 7 Eki: ucuncu tasarim - buyuk marka, bulutsu */
+.logo img{height:36px}
+.kahraman2{position:relative;isolation:isolate}
+.bulut{position:absolute;inset:-60px -50vw 0 -50vw;z-index:-1;background:linear-gradient(180deg,rgba(17,28,46,.55),rgba(17,28,46,.85) 75%,#111c2e),url(bulutsu.jpg) center/cover no-repeat}
+.marka{display:flex;align-items:center;gap:18px}
+.marka .amb{width:88px;height:auto;filter:drop-shadow(0 0 18px rgba(214,188,133,.25))}
+.marka .yazi2{width:250px;max-width:58vw;display:block}
+.marka .nebula{letter-spacing:.6em;padding-left:.2em;font-size:16px;margin-top:4px;text-align:center}
+.sl2{font-size:12.5px!important;letter-spacing:.2em;margin-top:14px;white-space:normal}
+@media (max-width:760px){.marka .amb{width:64px}.marka .yazi2{width:200px}}
+html,body{overflow-x:clip}
