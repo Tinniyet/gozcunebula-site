@@ -61,3 +61,7 @@ footer p{margin:6px 0}
 }
 .kahraman2 .ust .slogan{font-size:11.5px;letter-spacing:.14em;white-space:nowrap}
 @media (max-width:420px){.kahraman2 .ust .slogan{font-size:9.5px;letter-spacing:.08em}}
+.ekranlar{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin:26px 0 6px}
+.ekranlar figure{margin:0;text-align:center}
+.telefon.kucuk{width:220px}
+figcaption{margin-top:10px;color:var(--metin2);font-size:14px}
