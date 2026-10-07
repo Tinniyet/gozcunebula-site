@@ -26,3 +26,38 @@ ul{padding-left:20px} li{margin:4px 0}
 footer{border-top:1px solid var(--cizgi);margin-top:40px;padding:22px 0 36px;color:var(--metin2);font-size:13.5px;text-align:center}
 footer a{color:var(--metin2)}
 .yerli{font-family:Georgia,serif;font-style:italic;color:#ede6d6;margin-top:6px}
+/* 7 Eki: ikinci tasarim */
+header{position:sticky;top:0;background:rgba(17,28,46,.92);backdrop-filter:blur(8px);z-index:5}
+.logo img{height:28px;display:block}
+.kahraman2{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding:56px 0 30px}
+.kahraman2 h1{font-family:Georgia,serif;font-weight:400;font-size:40px;line-height:1.2;margin:14px 0 14px;color:#f3ead6}
+.kahraman2 h1 span{color:var(--altin2)}
+.kahraman2 .ust{display:flex;align-items:center;gap:14px}
+.kahraman2 .ust img{width:64px}
+.kahraman2 .ust .nebula{padding-left:0;letter-spacing:.45em;font-size:14px}
+.kahraman2 p.giris{font-size:17px;color:var(--metin2);max-width:34em}
+.rozetler{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.rozetler span{border:1px solid var(--cizgi);border-radius:999px;padding:6px 12px;font-size:13.5px;color:var(--metin2)}
+.telefon{justify-self:center;width:250px;border-radius:34px;border:8px solid #0a1220;box-shadow:0 0 0 1px rgba(214,188,133,.35),0 30px 60px rgba(0,0,0,.45);overflow:hidden;background:#0a1220}
+.telefon img{display:block;width:100%}
+.adimlar{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;counter-reset:a}
+.adim{background:var(--kart);border:1px solid var(--cizgi);border-radius:16px;padding:18px}
+.adim:before{counter-increment:a;content:counter(a);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--altin);color:var(--zemin);font-weight:700;margin-bottom:8px}
+.adim b{display:block;color:var(--altin2);margin-bottom:4px}
+.kaynaklar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:10px 0 4px}
+.kaynaklar span{background:#0e1828;border:1px solid var(--cizgi);border-radius:10px;padding:8px 14px;font-size:14px;color:var(--metin)}
+details{background:var(--kart);border:1px solid var(--cizgi);border-radius:14px;padding:14px 18px;margin:10px 0}
+summary{cursor:pointer;font-weight:600;color:var(--altin2)}
+details p{margin:10px 0 0;color:var(--metin2)}
+.ortala{text-align:center}
+.muhur{width:84px;height:84px;display:block;margin:0 auto 6px}
+footer p{margin:6px 0}
+@media (max-width:760px){
+ .kahraman2{grid-template-columns:1fr;padding-top:34px}
+ .kahraman2 h1{font-size:30px}
+ .telefon{width:220px}
+ .adimlar{grid-template-columns:1fr}
+ nav{gap:12px;font-size:14px}
+}
+.kahraman2 .ust .slogan{font-size:11.5px;letter-spacing:.14em;white-space:nowrap}
+@media (max-width:420px){.kahraman2 .ust .slogan{font-size:9.5px;letter-spacing:.08em}}
