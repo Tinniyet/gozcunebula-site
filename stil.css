@@ -181,12 +181,36 @@ footer a{color:var(--sis)}
 footer a:hover{color:var(--altin2)}
 .atif{font-size:12px;opacity:.75;margin-top:14px!important}
 
-/* Alt sayfalar: metin sayfası düzeni */
-.sayfa main{max-width:760px;margin:0 auto;padding:48px 20px 0}
-.sayfa h1{font-size:clamp(30px,4.4vw,42px)}
-.sayfa main > p:first-of-type{font-size:18.5px;color:#d3dbe6}
-.kart{background:rgba(18,32,58,.85);border:1px solid var(--cizgi);border-radius:16px;padding:20px 22px;margin:16px 0}
+/* Alt sayfalar: belge düzeni (konum izi + başlık bandı + "Bu sayfada" + okunaklı metin sütunu) */
+.belge{display:block}
+.belge-bas{max-width:1080px;margin:0 auto;padding:44px 20px 30px;border-bottom:1px solid var(--cizgi)}
+.iz{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--sis);margin-bottom:18px}
+.iz a{color:var(--sis);text-decoration:none;padding:0;border-radius:0;font-size:14px}
+.iz a:hover{color:var(--altin2);text-decoration:underline}
+.iz span:last-child{color:var(--fildisi)}
+.belge-bas h1{font-size:clamp(32px,4.6vw,48px);margin:0 0 .35em;max-width:18em;color:#f6edd8}
+.belge-bas .bas-ozet{font-family:var(--serif);font-size:clamp(18px,2.1vw,21px);line-height:1.55;color:#d9dfe8;max-width:38em;margin:0}
+.belge-bas .tarih{color:var(--sis);font-size:14px;margin:16px 0 0}
+.belge-govde{max-width:1080px;margin:0 auto;padding:36px 20px 0;display:grid;grid-template-columns:230px minmax(0,1fr);gap:56px;align-items:start}
+.belge-govde.tek{grid-template-columns:minmax(0,1fr)}
+.sayfada{position:sticky;top:88px;font-size:14.5px}
+.sayfada p{margin:0 0 10px;color:var(--fildisi);font-weight:600}
+.sayfada ol{list-style:none;margin:0;padding:0;border-left:1px solid var(--cizgi)}
+.sayfada li{margin:0}
+.sayfada a{display:block;padding:6px 0 6px 14px;margin-left:-1px;border-left:2px solid transparent;color:var(--sis);text-decoration:none;line-height:1.4}
+.sayfada a:hover{color:var(--altin2);border-left-color:var(--altin)}
+.metin{max-width:44em;font-size:17px;line-height:1.75;color:#dfe5ee}
+.metin h2{font-size:clamp(23px,2.6vw,28px);margin:1.6em 0 .55em;padding-top:1.1em;border-top:1px solid var(--cizgi);scroll-margin-top:90px}
+.metin > h2:first-child,.metin > section:first-child h2,.metin > ul:first-child{margin-top:0}
+.metin > section:first-child h2{border-top:0;padding-top:0}
+.metin p,.metin li{color:#dfe5ee}
+.metin b{color:var(--fildisi)}
+.metin ul,.metin ol{padding-left:22px}
+.metin li{margin:8px 0}
+.metin li::marker{color:var(--altin)}
+.kart{background:rgba(18,32,58,.85);border:1px solid var(--cizgi);border-radius:16px;padding:22px 24px;margin:18px 0}
 .kart b{color:var(--altin2)}
+.metin .dugme{margin-top:12px}
 .ortala{text-align:center}
 ul{padding-left:22px} li{margin:4px 0}
 
@@ -198,13 +222,15 @@ ul{padding-left:22px} li{margin:4px 0}
   .okuma-izgara,.nasil{grid-template-columns:1fr}
   .sonuc{position:static}
   .ozellikler dl{grid-template-columns:1fr}
+  .belge-govde{grid-template-columns:1fr;gap:20px}
+  .sayfada{position:static;border:1px solid var(--cizgi);border-radius:14px;padding:16px 18px;background:rgba(18,32,58,.6)}
   .uretici-bant{flex-direction:column;align-items:flex-start;padding:26px 22px!important}
 }
 @media (max-width:560px){
   body{font-size:16px}
   header .kap{flex-wrap:wrap;gap:0;padding-top:8px}
-  nav{margin-left:-12px;width:calc(100% + 24px);overflow-x:auto;padding:4px 0 8px}
-  nav a{white-space:nowrap;font-size:14.5px}
+  nav{margin-left:-10px;width:calc(100% + 20px);flex-wrap:wrap;gap:2px;padding:4px 0 8px}
+  nav a{white-space:nowrap;font-size:14px;padding:6px 9px}
   main > section,main > .kap{padding-top:64px}
   .marka .amb{width:62px}.marka .yazi{width:180px}
   .giris{font-size:17.5px}
