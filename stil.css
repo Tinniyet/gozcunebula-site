@@ -154,6 +154,7 @@ figcaption{text-align:center;color:var(--sis);font-size:14px;margin-top:10px}
 /* SSS ve açılır kutular (diğer sayfalar da kullanır) */
 details{border-bottom:1px solid var(--cizgi);padding:4px 0}
 .sss details:first-of-type{border-top:1px solid var(--cizgi)}
+.sss-tumu{margin-top:22px}
 summary{cursor:pointer;list-style:none;padding:14px 32px 14px 0;font-weight:600;color:var(--fildisi);position:relative}
 summary::-webkit-details-marker{display:none}
 summary:after{content:"";position:absolute;right:6px;top:21px;width:9px;height:9px;border-right:2px solid var(--altin);border-bottom:2px solid var(--altin);transform:rotate(45deg);transition:transform .2s}
